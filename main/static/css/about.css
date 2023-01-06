@@ -1,0 +1,71 @@
+/* BODY2 / ABOUT */
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 450px 0;
+}
+
+.about_us h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    color: white;
+    border-bottom: 3px solid white;
+    margin: 210px 210px 70px;
+}
+
+.first {
+    height: 300px;
+    width: 300px;
+
+    margin: 5%;
+    border-radius: 50%;
+}
+
+.first img {
+    height: 300px;
+    width: 300px;
+}
+
+.second {
+    height: 300px;
+    width: 300px;
+
+    margin: 5%;
+    border-radius: 50%;
+}
+
+.second img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.thirds {
+    height: 300px;
+    width: 300px;
+
+    margin: 5%;
+    border-radius: 50%;
+}
+
+.thirds img {
+    height: 300px;
+    width: 300px;
+}
+
+.first p {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.second p {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.thirds p {
+    text-align: center;
+    margin-top: 70px;
+}
+

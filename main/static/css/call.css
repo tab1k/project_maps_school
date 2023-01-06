@@ -1,0 +1,64 @@
+.call_page {
+    display: flex;
+}
+
+.forms {
+    margin: 1%;
+}
+
+.left_call_side {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.right_call_side {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+
+}
+
+.area {
+    width: 450px;
+}
+
+.postcard {
+    background-color: snow;
+    width: 576px; /*Ширина 300 пикселей*/
+    height: 390px;
+    padding: 32px; /* Внутренний отступ 32 пикселей */
+    border-radius: 10px; /* Закруглённую рамку или скруглить углы элемента.*/
+    box-shadow: 0 4px 16px #ccc; /* Тень элемента. 0 - смещение Х, 4 - смещение Y, 16 - степень размытия, #ccc - цвет.*/
+    font-family: sans-serif; /* Шрифт.*/
+    letter-spacing: 1px; /* Расстояние между буквами */
+    align-items: center;
+    margin: auto;
+}
+
+
+iframe {
+    border-radius: 10px;
+}
+
+input {
+    border-radius: 10px;
+    border: #8f8cf4;
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.user {
+    margin: 20px;
+}
+
+.form_title {
+    text-shadow: 1px 1px 1px #4830F0;
+    color: #0e0081;
+}
+

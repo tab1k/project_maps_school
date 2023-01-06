@@ -1,0 +1,38 @@
+.footer {
+    background-color: snow;
+    height: 250px;
+    margin: 150px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.right_footer {
+    width: 13%;
+    align-items: center;
+    text-align: center;
+}
+
+.right_footer img {
+    height: 150px;
+}
+
+.left_footer {
+    margin: auto;
+    display: flex;
+}
+
+.left_footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.kdr {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: center;
+}
+
+.border {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}

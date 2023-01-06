@@ -1,0 +1,18 @@
+.right_side img {
+    position: absolute;
+    height: 90px;
+}
+
+#img1 {
+    position: absolute;
+    height: 70px;
+    margin-left: 400px;
+    margin-top: 150px;
+}
+
+#img2 {
+    position: absolute;
+    height: 100px;
+    margin-left: 84%;
+    margin-top: 8%;
+}
