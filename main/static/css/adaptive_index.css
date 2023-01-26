@@ -1,0 +1,17 @@
+@media all and (max-width: 1200px) {
+  .head_wrap {
+      width: auto;
+  }
+}
+
+@media screen and (max-width: 998px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
