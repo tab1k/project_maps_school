@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>О нас</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -13,15 +14,15 @@
     <!-- HEADER -->
     <header>
       <div class="head_wrap">
-        <a href="#"><img class="logo" src="img/logo.webp" alt=""><p>MAPS</p></a>
+        <a href="#"><img class="logo" src="{% static "img/logo.webp" %}" alt=""><p>MAPS</p></a>
         <nav>
           <ul class="main_nav">
-            <a href="index.html"><li class="nav_itm">Home</li></a>
-            <a href="about.html"><li class="nav_itm">About</li></a>
-            <a href="courses.html"><li class="nav_itm">Courses</li></a>
-            <a href="quotes.html"><li class="nav_itm">Quotes</li></a>
-            <a href="cooperation.html"><li class="nav_itm">Cooperation</li></a>
-            <a href="contact.html"><li class="nav_itm">Contacts</li></a>
+            <a href="/"><li class="nav_itm">Home</li></a>
+            <a href="/about"><li class="nav_itm">About</li></a>
+            <a href="/courses"><li class="nav_itm">Courses</li></a>
+            <a href="/quotes"><li class="nav_itm">Quotes</li></a>
+            <a href="/cooperation"><li class="nav_itm">Cooperation</li></a>
+            <a href="/contact"><li class="nav_itm">Contacts</li></a>
           </ul>
         </nav>
       </div>
@@ -30,7 +31,7 @@
     <!-- BODY -->
 
     <div class="img_block">
-      <img src="img/1.jpg" alt="">
+      <img src="{% static "img/1.jpg" %}" alt="">
     </div>
 
 
@@ -40,13 +41,13 @@
       <h1>About Us</h1>
       <div class="all_of_circle">
         <div class="first_circle">
-          <a href="#"><img class="first_img" src="img/1.jpg" alt=""></a>
+          <a href="#"><img class="first_img" src="{% static "img/1.jpg" %}" alt=""></a>
         </div>
         <div class="second_circle">
-          <a href="#"><img class="secons_img" src="img/2.jpg" alt=""></a>
+          <a href="#"><img class="secons_img" src="{% static "img/2.jpg" %}" alt=""></a>
         </div>
         <div class="first_circle">
-          <a href="#"><img class="first_img" src="img/3.jpg" alt=""></a>
+          <a href="#"><img class="first_img" src="{% static "img/3.jpg" %}" alt=""></a>
         </div>
       </div>
       <div class="">
@@ -83,14 +84,14 @@
     <!-- FOOTER -->
     <footer>
       <div class="right_footer">
-          <img src="img/logo.webp">
+          <img src="{% static "img/logo.webp" %}">
       </div>
       <div class="footer_maps">
           <div class="kdr">
               <a class="border" href=""><p><b>Об Академии</b></p></a>
               <a href=""><p>Главная</p></a>
               <a href=""><p>О нас</p></a>
-              <a href="subjects.html"><p>Курсы</p></a>
+              <a href="/subjects"><p>Курсы</p></a>
               <a href=""><p>Записаться</p></a>
           </div>
           <div class="kdr">
