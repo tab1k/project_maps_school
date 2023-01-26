@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -12,15 +13,15 @@
     <!-- HEADER -->
     <header>
       <div class="head_wrap">
-        <a href="#"><img class="logo" src="img/logo.webp" alt=""><p>MAPS</p></a>
+        <a href="#"><img class="logo" src="{% static "img/logo.webp" %}" alt=""><p>MAPS</p></a>
         <nav>
           <ul class="main_nav">
             <a href="#"><li class="nav_itm">Home</li></a>
-            <a href="about.html"><li class="nav_itm">About</li></a>
-            <a href="courses.html"><li class="nav_itm">Courses</li></a>
-            <a href="quotes.html"><li class="nav_itm">Quotes</li></a>
-            <a href="cooperation.html"><li class="nav_itm">Cooperation</li></a>
-            <a href="contacts.html"><li class="nav_itm">Contacts</li></a>
+            <a href="/about "><li class="nav_itm">About</li></a>
+            <a href="/courses"><li class="nav_itm">Courses</li></a>
+            <a href="/quotes"><li class="nav_itm">Quotes</li></a>
+            <a href="/cooperation"><li class="nav_itm">Cooperation</li></a>
+            <a href="/contacts"><li class="nav_itm">Contacts</li></a>
           </ul>
         </nav>
       </div>
@@ -29,7 +30,7 @@
     <main>
       <div class="body_wrap">
         <div class="left_side">
-          <img src="img/base.webp" alt="">
+          <img src="{% static "img/base.webp" %}" alt="">
         </div>
         <div class="right_side">
           <h1 class="maps">MAPS</h1>
@@ -43,13 +44,13 @@
         <h1>About Us</h1>
         <div class="all_of_circle">
           <div class="first_circle">
-            <a href="#"><img class="first_img" src="img/1.jpg" alt=""></a>
+            <a href="#"><img class="first_img" src="{% static "img/1.jpg" %}" alt=""></a>
           </div>
           <div class="second_circle">
-            <a href="#"><img class="secons_img" src="img/2.jpg" alt=""></a>
+            <a href="#"><img class="secons_img" src="{% static "img/2.jpg" %}" alt=""></a>
           </div>
           <div class="first_circle">
-            <a href="#"><img class="first_img" src="img/3.jpg" alt=""></a>
+            <a href="#"><img class="first_img" src="{% static "img/3.jpg" %}" alt=""></a>
           </div>
         </div>
         <div class="">
@@ -90,21 +91,21 @@
         <div class="body_wrap_courses">
 
           <div class="sections">
-            <img class="size" src="img/1.jpg" alt="">
+            <img class="size" src="{% static "img/1.jpg" %}" alt="">
             <h2>Intro to Scuba</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <input type="submit" name="" value="Read More">
           </div>
 
           <div class="sections">
-            <img class="size" src="img/2.jpg" alt="">
+            <img class="size" src="{% static "img/2.jpg" %}" alt="">
             <h2>Intro to Scuba</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <input type="submit" name="" value="Read More">
           </div>
 
           <div class="sections">
-            <img class="size" src="img/3.jpg" alt="">
+            <img class="size" src="{% static "img/3.jpg" %}" alt="">
             <h2>Intro to Scuba</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <input type="submit" name="" value="Read More">
@@ -169,7 +170,7 @@
       <!-- FOOTER -->
       <footer>
         <div class="right_footer">
-            <img src="img/logo.webp">
+            <img src="{% static "img/logo.webp" %}">
         </div>
         <div class="footer_maps">
             <div class="kdr">

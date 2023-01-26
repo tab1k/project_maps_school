@@ -6,25 +6,29 @@ from .models import *
 
 # Create your views here.
 
-
-def general_page(request):
-    return render(request, 'main/index.html')
-
-
-def subjects(request):
-
-    context = {}
-
-    if request.method == 'POST':
-        form = ContactForms(request.POST)
-        if form.is_valid():
-            pass
+class GeneralPage(ListView):
+    model = Subject
+    template_name = 'main/index.html'
+    #context_object_name = ''
 
 
-    else:
-        pass
-        #form = ContactForms()
+class Courses(ListView):
+    model = Subject
+    template_name = 'main/courses.html'
 
-    context['form'] = form
+class About(ListView):
+    model = Subject
+    template_name = 'main/about.html'
 
-    return render(request, 'main/courses.html', context=context)
+
+class Cooperation(ListView):
+    model = Subject
+    template_name = 'main/cooperation.html'
+
+class Quotes(ListView):
+    model = Subject
+    template_name = 'main/quotes.html'
+
+class Contacts(ListView):
+    model = Subject
+    template_name = 'main/contacts.html'
