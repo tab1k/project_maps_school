@@ -1,0 +1,14 @@
+class Information_About(models.Model):
+    """ ОСНОВНАЯ ИНФОРМАЦИЯ НА СТРАНИЦЕ """
+    info = models.TextField("Инфо текст 1", max_length=300,)
+    date = models.DateField()
+
+    info2 = models.TextField("Инфо текст 1", max_length=300)
+    date2 = models.DateField()
+
+    info3 = models.TextField("Инфо текст 1", max_length=300)
+    date3 = models.DateField()
+
+    class Meta:
+        verbose_name = "Информационный текст"
+        verbose_name_plural = "Информациионные текста"

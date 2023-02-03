@@ -9,7 +9,10 @@ from .models import *
 class GeneralPage(ListView):
     model = Subject
     template_name = 'main/index.html'
-    #context_object_name = ''
+    categories = Category.objects.all()
+    for category in categories:
+        print(category.name)
+
 
 
 class Courses(ListView):
