@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 
@@ -8,10 +9,6 @@ class Category(models.Model):
     """Категории"""
     name = models.CharField("Категория", max_length=150, blank=False)
     description = models.TextField("Описание")
-    url = models.SlugField(max_length=160, unique=True)
-
-
-
 
     def __str__(self):
         return self.name
@@ -21,11 +18,6 @@ class Category(models.Model):
         verbose_name = "Категория"
         verbose_name_plural = "Категории"
 
-class Information_About(models.Model):
-    """ ОСНОВНАЯ ИНФОРМАЦИЯ НА СТРАНИЦЕ """
-    first_text = models.TextField("Информационный текст1")
-    second_text = models.TextField("Информационный текст2")
-    third_text = models.TextField("Информационный текст3")
 
 
 class Subject(models.Model):

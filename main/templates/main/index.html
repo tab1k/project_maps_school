@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content = "width=device-width, initial-scale = 1">
     <title>Главная</title>
-    <link rel="stylesheet" href="{% static "static/css/adaptive_css/adaptive_index.css" %}">
+    <link rel="stylesheet" href="{% static "css/adaptive_index.css" %}">
     <link rel="stylesheet" href="{% static "css/index.css" %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,11 @@
     <!-- HEADER -->
     <header>
       <div class="head_wrap">
-        <a href="#"><img class="logo" src="{% static "img/logo.webp" %}" alt=""><p>MAPS</p></a>
-        <nav>
+        <a href="#"><img class="logo" src="{% static "img/logo.webp" %}" alt=""></a>
+        <div class="header_burger">
+          <span></span>
+        </div>
+        <nav class="header_menu">
           <ul class="main_nav">
             <a href="/"><li class="nav_itm">Home</li></a>
             <a href="/about"><li class="nav_itm">About</li></a>
