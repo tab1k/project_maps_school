@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
+
+from subjects.models import Subject
 from .forms import ContactForms
 from .models import *
 # CBV - CLASS BASED VIEWS (ListView)
@@ -7,9 +9,9 @@ from .models import *
 # Create your views here.
 
 class GeneralPage(ListView):
-    model = Subject
+    model = Category
     template_name = 'main/index.html'
-    categories = Category.objects.all()
+    categories = model.objects.all()
     for category in categories:
         print(category.name)
 

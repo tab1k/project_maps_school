@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages", #фреймворк сообщений
     "django.contrib.staticfiles", #фреймворк для работы со статическими файлами.
     "main",
+    "subjects",
 ]
 
 MIDDLEWARE = [
